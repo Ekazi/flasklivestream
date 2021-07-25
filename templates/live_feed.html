@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1><strong>Hello {{name}}!</strong></h1>
+    <h2><strong>Webcam Feed</strong></h2>
+    <p></strong>My ugly mug LIVE!</p>
+    <div class="conainer">
+       <img src="https://markojudas.ngrok.io/video_feed" width="50%" alt="You just missed the show ;)">
+       <br><br>
+       <a class='btn btn-secondary' href="{{url_for('index')}}" role="button">Go Back</a>
+   </div>
+{% endblock %}
