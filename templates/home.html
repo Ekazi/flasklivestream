@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Welcome!</h1>
+  <img src="./static/networking.jpg" alt="Class Logo" width="50%">
+  <p><strong>My name is Jose Hernandez and this is my solution for Assignment 10 & 11</strong></p>
+  <br>
+  <a class="btn btn-secondary" href="{{url_for('login')}}" role="button">Login with Google</a>
+{% endblock %}
