@@ -14,8 +14,8 @@ app = Flask(__name__)
 # setting up the environment variables
 os.environ['OAUTHLIB_RELAX_TOKEN_SCOPE'] = config('RELAX_TOKEN')
 app.config['SECRET_KEY'] = 'mysecret'
-app.config['GOOGLE_OAUTH_CLIENT_ID'] = config('CLIENT_ID')
-app.config['GOOGLE_OAUTH_CLIENT_SECRET'] = config('CLIENT_SECRET')
+app.config['GOOGLE_OAUTH_CLIENT_ID'] = 267841867972-303q7hjhugeji8h3oljm14hjjl9r76on.apps.googleusercontent.com
+app.config['GOOGLE_OAUTH_CLIENT_SECRET'] = DHrTg91-Y6wbN2WVZ_55Bupb
 
 # setting up the google blueprint & registring it
 blueprint = make_google_blueprint(reprompt_consent=True, scope=['profile', 'email'])
