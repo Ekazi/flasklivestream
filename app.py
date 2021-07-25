@@ -1,9 +1,7 @@
-# Assistance from Jose Hernandez (Markojudas) on this project
-
 import os
 # setting the environment variables for local testing / not used on deployment
-# os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
-# os.environ['OAUTHLIB_RELAX_TOKEN_SCOPE'] = '1'
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+os.environ['OAUTHLIB_RELAX_TOKEN_SCOPE'] = '1'
 
 from decouple import config
 from flask import Flask, redirect, url_for, render_template
