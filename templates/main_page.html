@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1><strong>Hello {{name}}!</strong></h1>
+  <p><strong>Please select to see a static feed or live feed:</strong></p>
+  <a class="btn btn-secondary" href="{{url_for('static_feed')}}" role="button">Static Feed</a>
+  <br><br>
+  <a class="btn btn-secondary" href="{{url_for('live_feed')}}" role="button">Live Feed</a>
+
+{% endblock %}
