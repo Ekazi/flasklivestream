@@ -35,7 +35,7 @@ def static_feed():
         resp = google.get('/oauth2/v3/userinfo')
         assert resp.ok, resp.text
         name = resp.json()['name']
-        return render_template('staticfeed.html', name=name)
+        return render_template('static_feed.html', name=name)
     else:
         return redirect(url_for('index'))
 
